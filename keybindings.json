@@ -1,0 +1,109 @@
+// Place your key bindings in this file to override the defaults
+[
+  // Cursor keybindings
+  {
+    // Opens AI prompt for short edits
+    "key": "ctrl+k",
+    "command": "cursor.inline.toggle",
+    "when": "editorTextFocus"
+  },
+  {
+    // Toggles the AI chat panel with the current selection as context (if any)
+    "key": "ctrl+l",
+    "command": "cursor.chat.toggle",
+    "when": "editorTextFocus"
+  },
+  {
+    // Creates a new chat session with the selected code
+    "key": "ctrl+shift+l",
+    "command": "cursor.chat.codeBlock",
+    "when": "editorTextFocus"
+  },
+  // Navigation keybindings
+  {
+    // "Go to File" command
+    "key": "ctrl+p",
+    "command": "workbench.action.quickOpen"
+  },
+  {
+    // "Go to Symbol" (functions, classes, variables) in the *current* file
+    "key": "ctrl+shift+o",
+    "command": "workbench.action.gotoSymbol"
+  },
+  {
+    // "Go to Symbol" (functions, etc.) across your *entire workspace*
+    "key": "ctrl+t",
+    "command": "workbench.action.showAllSymbols"
+  },
+  // Editing & Multi-cursor keybindings
+  {
+    // Move the current line (or selected block) up
+    "key": "alt+up",
+    "command": "editor.action.moveLinesUpAction",
+    "when": "editorTextFocus && !editorReadOnly"
+  },
+  {
+    // Move the current line (or selected block) down
+    "key": "alt+down",
+    "command": "editor.action.moveLinesDownAction",
+    "when": "editorTextFocus && !editorReadOnly"
+  },
+  {
+    // Duplicate the current selection
+    "key": "ctrl+d",
+    "command": "editor.action.duplicateSelection",
+    "when": "editorTextFocus"
+  },
+  {
+    // Add a new cursor on the line directly below.
+    "key": "ctrl+alt+down",
+    "command": "editor.action.insertCursorBelow",
+    "when": "editorTextFocus"
+  },
+  {
+    // Add a new cursor on the line directly above.
+    "key": "ctrl+alt+up",
+    "command": "editor.action.insertCursorAbove",
+    "when": "editorTextFocus"
+  },
+  {
+    // Comment the current line
+    "key": "ctrl+[Equal]",
+    "command": "editor.action.commentLine",
+    "when": "editorTextFocus"
+  },
+  {
+    // Format the current document
+    "key": "shift+alt+f",
+    "command": "editor.action.formatDocument",
+    "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadOnly"
+  },
+  // Panel Management keybindings
+  {
+    // Toggles the side bar (Explorer, etc.) for more screen space.
+    "key": "ctrl+b",
+    "command": "workbench.action.toggleSidebarVisibility"
+  },
+  {
+    // Toggles the *bottom* panel (Terminal, Output, Problems).
+    "key": "ctrl+j",
+    "command": "workbench.action.togglePanel"
+  },
+  {
+    // Closes all other tabs.
+    "key": "ctrl+w ctrl+w",
+    "command": "workbench.action.closeOtherEditors"
+  },
+  {
+    // Pin the active tab
+    "key": "ctrl+m ctrl+m",
+    "command": "workbench.action.pinEditor",
+    "when": "!activeEditorIsPinned"
+  },
+  {
+    // Unpin the active tab
+    "key": "ctrl+m ctrl+m",
+    "command": "workbench.action.unpinEditor",
+    "when": "activeEditorIsPinned"
+  }
+]
