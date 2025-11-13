@@ -4506,10 +4506,10 @@
 	"terminal.integrated.copyOnSelection": false,
 
 	// Controls whether the terminal cursor blinks.
-	"terminal.integrated.cursorBlinking": false,
+	"terminal.integrated.cursorBlinking": true,
 
 	// Controls the style of terminal cursor when the terminal is focused.
-	"terminal.integrated.cursorStyle": "block",
+	"terminal.integrated.cursorStyle": "line",
 
 	// Controls the style of terminal cursor when the terminal is not focused.
 	"terminal.integrated.cursorStyleInactive": "outline",
@@ -4694,7 +4694,7 @@
 	"terminal.integrated.fontLigatures.featureSettings": "\"calt\" on",
 
 	// Controls the font size in pixels of the terminal.
-	"terminal.integrated.fontSize": 14,
+	"terminal.integrated.fontSize": 12,
 
 	// The font weight to use within the terminal for non-bold text. Accepts "normal" and "bold" keywords or numbers between 1 and 1000.
 	"terminal.integrated.fontWeight": "normal",
@@ -4913,7 +4913,7 @@
 	"terminal.integrated.rightClickBehavior": "default",
 
 	// Controls the maximum number of lines the terminal keeps in its buffer. We pre-allocate memory based on this value in order to ensure a smooth experience. As such, as the value increases, so will the amount of memory.
-	"terminal.integrated.scrollback": 1000,
+	"terminal.integrated.scrollback": 10000,
 
 	// Dispatches most keybindings to the terminal instead of the workbench, overriding `terminal.integrated.commandsToSkipShell`, which can be used alternatively for fine tuning.
 	"terminal.integrated.sendKeybindingsToShell": false,
@@ -5955,7 +5955,7 @@
 	"problems.visibility": true,
 
 	// Enable/disable navigation breadcrumbs.
-	"breadcrumbs.enabled": true,
+	"breadcrumbs.enabled": false,
 
 	// Controls whether and how file paths are shown in the breadcrumbs view.
 	//  - on: Show the file path in the breadcrumbs view.
@@ -6059,7 +6059,7 @@
 	// If this setting is false, no telemetry will be sent regardless of the new setting's value. Deprecated due to being combined into the `crashReporting.enabled` setting.
 	// Enable crash reports to be collected. This helps us improve stability. 
 	// This option requires restart to take effect.
-	"telemetry.enableCrashReporter": true,
+	"telemetry.enableCrashReporter": false,
 
 	// Controls whether Outline items are collapsed or expanded.
 	//  - alwaysCollapse: Collapse all items.
