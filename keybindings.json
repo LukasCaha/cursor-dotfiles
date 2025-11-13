@@ -48,7 +48,7 @@
   },
   {
     // Comment the current line
-    "key": "ctrl+[Equal]",
+    "key": "ctrl+-",
     "command": "editor.action.commentLine",
     "when": "editorTextFocus"
   },
