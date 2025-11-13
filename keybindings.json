@@ -1,24 +1,4 @@
-// Place your key bindings in this file to override the defaults
 [
-  // Cursor keybindings
-  {
-    // Opens AI prompt for short edits
-    "key": "ctrl+k",
-    "command": "cursor.inline.toggle",
-    "when": "editorTextFocus"
-  },
-  {
-    // Toggles the AI chat panel with the current selection as context (if any)
-    "key": "ctrl+l",
-    "command": "cursor.chat.toggle",
-    "when": "editorTextFocus"
-  },
-  {
-    // Creates a new chat session with the selected code
-    "key": "ctrl+shift+l",
-    "command": "cursor.chat.codeBlock",
-    "when": "editorTextFocus"
-  },
   // Navigation keybindings
   {
     // "Go to File" command
