@@ -1,0 +1,15 @@
+bmewburn.vscode-intelephense-client
+laravel.vscode-laravel
+open-southeners.laravel-pint
+sanderronde.phpstan-vscode
+recca0120.vscode-phpunit
+esbenp.prettier-vscode
+xdebug.php-debug
+bradlc.vscode-tailwindcss
+adrianwilczynski.alpine-js-intellisense
+joshuaborup.livewire-language-support
+robsontenorio.voltage
+eamodio.gitlens
+streetsidesoftware.code-spell-checker
+mikestead.dotenv
+mechatroner.rainbow-csv
