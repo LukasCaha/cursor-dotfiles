@@ -1567,7 +1567,7 @@
 	"workbench.editor.splitSizing": "auto",
 
 	// Controls the visibility of the tab close action button.
-	"workbench.editor.tabActionCloseVisibility": false,
+	"workbench.editor.tabActionCloseVisibility": true,
 
 	// Controls the position of the editor's tabs action buttons (close, unpin). This value is ignored when `workbench.editor.showTabs` is not set to `multiple`.
 	"workbench.editor.tabActionLocation": "right",
@@ -6482,7 +6482,9 @@
 		"**/*.cer",
 		"**/id_rsa",
 		"**/id_dsa",
-		"**/.ssh/id_*"
+		"**/.ssh/id_*",
+    "**/node_modules/**",
+    "**/vendor/**"
 	],
 
 	// Show notification toasts in the same location as the chat
@@ -6516,16 +6518,16 @@
 	"cursor.composer.showSuggestedFiles": true,
 
 	// Controls the text size scale (relative to base 12px) of AI chat messages.
-	"cursor.composer.textSizeScale": 1,
+	"cursor.composer.textSizeScale": 0.9,
 
 	// When to display the usage summary at the bottom of the chat pane: automatically when approaching limits, always, or never.
-	"cursor.composer.usageSummaryDisplay": "auto",
+	"cursor.composer.usageSummaryDisplay": "always",
 
 	// Include commits with files results
 	"cursor.semanticSearch.includeCommitsWithFiles": false,
 
 	// Enable Agent Window/Layout beta setting.
-	"cursor.enable_agent_window_setting": true,
+	"cursor.enable_agent_window_setting": false,
 
 	// Enable logging of extension host RPC messages to JSON files viewable in Perfetto. Requires restart.
 	"cursor.rpcFileLogger.enabled": false,
@@ -6952,7 +6954,7 @@
 	"git.alwaysSignOff": false,
 
 	// When set to true, commits will automatically be fetched from the default remote of the current Git repository. Setting to `all` will fetch from all remotes.
-	"git.autofetch": false,
+	"git.autofetch": true,
 
 	// Duration in seconds between each automatic git fetch, when `git.autofetch` is enabled.
 	"git.autofetchPeriod": 180,
@@ -7180,7 +7182,7 @@
 	"git.openAfterClone": "prompt",
 
 	// Controls whether the diff editor should be opened when clicking a change. Otherwise the regular editor will be opened.
-	"git.openDiffOnClick": true,
+	"git.openDiffOnClick": false,
 
 	// Control whether a repository in parent folders of workspaces or open files should be opened.
 	//  - always: Always open a repository in parent folders of workspaces or open files.
@@ -7232,7 +7234,8 @@
 
 	// List of folders that are ignored while scanning for Git repositories when `git.autoRepositoryDetection` is set to `true` or `subFolders`.
 	"git.repositoryScanIgnoredFolders": [
-		"node_modules"
+		"node_modules",
+    "vendor"
 	],
 
 	// Controls the depth used when scanning workspace folders for Git repositories when `git.autoRepositoryDetection` is set to `true` or `subFolders`. Can be set to `-1` for no limit.
@@ -7264,7 +7267,7 @@
 	"git.showProgress": true,
 
 	// Controls whether to show a notification when a push is successful.
-	"git.showPushSuccessNotification": false,
+	"git.showPushSuccessNotification": true,
 
 	// Controls whether to show the details of the last commit for Git refs in the checkout, branch, and tag pickers.
 	"git.showReferenceDetails": true,
@@ -7281,7 +7284,7 @@
 	"git.statusLimit": 10000,
 
 	// Suggests to enable smart commit (commit all changes when there are no staged changes).
-	"git.suggestSmartCommit": true,
+	"git.suggestSmartCommit": false,
 
 	// Controls whether a notification comes up when running the Sync action, which allows the user to cancel the operation.
 	"git.supportCancellation": false,
