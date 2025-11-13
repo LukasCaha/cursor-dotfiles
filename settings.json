@@ -7483,13 +7483,17 @@
   // 3. Set Laravel Pint as the formatter *only* for PHP files.
   // This overrides the default for this specific language.
   "[php]": {
-    "editor.defaultFormatter": "open-southeners.laravel-pint"
+    "editor.defaultFormatter": "open-southeners.laravel-pint",
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true
   },
 
   // 4. Tell Prettier to handle Blade files (using the NPM plugin).
   // This ensures Prettier, not Pint, formats your Blade templates.
   "[blade]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
   },
 
   // 5. (Optional but Recommended) Help Intelephense find Laravel stubs
