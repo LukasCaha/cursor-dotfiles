@@ -7079,7 +7079,7 @@
 	"git.confirmNoVerifyCommit": true,
 
 	// Confirm before synchronizing Git repositories.
-	"git.confirmSync": true,
+	"git.confirmSync": false,
 
 	// Controls the Git count badge.
 	//  - all: Count all changes.
