@@ -6443,7 +6443,7 @@
 	],
 
 	// Enable partial accepts for Cursor Tab, using the editor.action.inlineSuggest.acceptNextWord keybinding
-	"cursor.cpp.enablePartialAccepts": false,
+	"cursor.cpp.enablePartialAccepts": true,
 
 	// AI-based Terminal Completion Detection. 
 	"cursor.terminal.enableAiChecks": true,
@@ -6512,7 +6512,7 @@
 	"cursor.composer.shouldAutoSaveNonAgent": true,
 
 	// Play a sound when a chat response is completed
-	"cursor.composer.shouldChimeAfterChatFinishes": false,
+	"cursor.composer.shouldChimeAfterChatFinishes": true,
 
 	// Show suggested files in the composer
 	"cursor.composer.showSuggestedFiles": true,
@@ -7505,7 +7505,7 @@
 	// Controls whether 'Peek References' or 'Find References' is invoked when selecting CodeLens references.
 	//  - peek: Show references in peek editor.
 	//  - view: Show references in separate view.
-	"references.preferredLocation": "peek",
+	"references.preferredLocation": "view",
 
 	// Enable/disable the floating indicator that shows when focused in the simple browser.
 	"simpleBrowser.focusLockIndicator.enabled": true,
