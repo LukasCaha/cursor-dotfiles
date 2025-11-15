@@ -1951,7 +1951,7 @@
   "window.zoomPerWindow": true,
 
   // Configure [glob patterns](https://aka.ms/vscode-glob-patterns) of file associations to languages (for example `"*.extension": "html"`). Patterns will match on the absolute path of a file if they contain a path separator and will match on the name of the file otherwise. These have precedence over the default associations of the languages installed.
-  "files.associations": {},
+  "files.associations": { "*.blade.php": "blade" },
 
   // When enabled, the editor will attempt to guess the character set encoding when opening files. This setting can also be configured per language. Note, this setting is not respected by text search. Only `files.encoding` is respected.
   "files.autoGuessEncoding": false,
@@ -6231,7 +6231,9 @@
     "editor.quickSuggestions": {
       "strings": true
     },
-    "editor.suggest.insertMode": "replace"
+    "editor.suggest.insertMode": "replace",
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true
   },
 
   // Configure settings to be overridden for the jsonc language.
@@ -6887,7 +6889,9 @@
 
   // Enable Emmet abbreviations in languages that are not supported by default. Add a mapping here between the language and Emmet supported language.
   //  For example: `{"vue-html": "html", "javascript": "javascriptreact"}`
-  "emmet.includeLanguages": {},
+  "emmet.includeLanguages": {
+    "blade": "html"
+  },
 
   // When set to `false`, the whole file is parsed to determine if current position is valid for expanding Emmet abbreviations. When set to `true`, only the content around the current position in CSS/SCSS/Less files is parsed.
   "emmet.optimizeStylesheetParsing": true,
@@ -7506,5 +7510,6 @@
     ".phpstorm.meta.php",
     "_ide_helper.php",
     "!vendor"
-  ]
+  ],
+  "Laravel.pint.runOnSave": true
 }
